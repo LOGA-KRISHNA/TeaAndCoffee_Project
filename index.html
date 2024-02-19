@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-700 font-mono" >
+    <section class="container-sm ">
+        <div class="mx-auto flex flex-start justify-between m-10  p-4 bg-yellow-800">
+            <div class="text-2xl font-bold text-white">
+                T&C Truck
+            </div>
+            <div >
+                <ul class="hidden sm:flex">
+                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#home">Home</a></li>
+                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#products">products</a></li>
+                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#frances">Frances</a></li>
+                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#">About Us</a></li>
+                </ul>
+                <a onclick="show()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="44" class="sm:hidden"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path></svg></a>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    
+
+    <section  id="#home" class="flex p-10 z-2  mb-20 ">
+        <div class="w-full lg:w-1/2">
+            <h1 class="text-5xl text-center lg:text-left lg:text-6xl text-white">The taste of <br> <span class="text-black">tradition Coffee</span></h1>
+            <p class=" text-2xl text-center lg:text-left lg:text-3xl mt-10 p-5"><span class="text-white">Tea and Coffee Truck </span>Coffee is kind of a weird thing to love.   We most of us couldn’t get through our day without it. So Let's Join us. </p>
+            <div class="flex justify-center lg:justify-start">
+                <button class="text-white m-5 border-solid border-2 border-stone-900 rounded-md p-3">Feel it</button>
+                <button class=" text-white m-5 bg-yellow-900 rounded-md p-3 hover:bg-yellow-900">Order Now</button>
+            </div>
+        </div>
+        <div class="w-1/2 p-10 hidden lg:flex"><img src="./TeaOrCoffee.webp" alt="coffee" class="m-auto"></div>
+    </section>
+
+
+    <section class="bg-yellow-800 p-5" id="products">
+        <div class=""><h1 class="text-white text-7xl text-center">Products</h1></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="p-10">
+                <h1 class="text-2xl text-white p-4 text-center">Coffee</h1>
+                <img src="./coffee.avif" alt="coffee">
+                <p class="mt-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laborum officiis, praesentium atque velit animi omnis? Repellendus temporibus dolores incidunt quia eveniet voluptate, culpa quaerat, minus dolorem quod saepe amet.</p>
+            </div>
+            <div class="p-10">
+                <h1 class="text-2xl text-white p-4 text-center">Coffee</h1>
+                <img src="./coffee.avif" alt="coffee">
+                <p class="mt-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laborum officiis, praesentium atque velit animi omnis? Repellendus temporibus dolores incidunt quia eveniet voluptate, culpa quaerat, minus dolorem quod saepe amet.</p>
+            </div>
+            <div class="p-10">
+                <h1 class="text-2xl text-white p-4 text-center">Coffee</h1>
+                <img src="./coffee.avif" alt="coffee">
+                <p class="mt-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laborum officiis, praesentium atque velit animi omnis? Repellendus temporibus dolores incidunt quia eveniet voluptate, culpa quaerat, minus dolorem quod saepe amet.</p>
+            </div>
+            <div class="p-10">
+                <h1 class="text-2xl text-white p-4 text-center">Coffee</h1>
+                <img src="./coffee.avif" alt="coffee">
+                <p class="mt-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laborum officiis, praesentium atque velit animi omnis? Repellendus temporibus dolores incidunt quia eveniet voluptate, culpa quaerat, minus dolorem quod saepe amet.</p>
+            </div>
+            <div class="p-10">
+                <h1 class="text-2xl text-white p-4 text-center">Coffee</h1>
+                <img src="./coffee.avif" alt="coffee">
+                <p class="mt-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laborum officiis, praesentium atque velit animi omnis? Repellendus temporibus dolores incidunt quia eveniet voluptate, culpa quaerat, minus dolorem quod saepe amet.</p>
+            </div>
+            <div class="p-10">
+                <h1 class="text-2xl text-white p-4 text-center">Coffee</h1>
+                <img src="./coffee.avif" alt="coffee">
+                <p class="mt-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At laborum officiis, praesentium atque velit animi omnis? Repellendus temporibus dolores incidunt quia eveniet voluptate, culpa quaerat, minus dolorem quod saepe amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-yellow-700 font-mono" id="frances">
+        <h1 class="text-white text-7xl mt-5 text-center">Frances</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            
+            <div class="p-10">
+                <h1 class="text-center mb-10 text-4xl">Chennai</h1>
+                <img src="./chennai_.jpg" alt="image">
+            </div>
+            <div class="p-10">
+                <h1 class="text-center mb-10 text-4xl">Bangalore</h1>
+                <img src="./bangalore.webp" alt="image">
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="bg-yellow-800">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="w-full sm:w-1/2">
+                <div class="text-3xl text-white p-3 mt-2">Contact us</div>
+                <div class="flex flex-col align-center">
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-12 h-12 m-10">
+                        <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                        <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                        </svg>
+                        <p class="my-12 text-xl">TandCTruck@gmail.com</p>
+                    </div> 
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-12 h-12 m-10">
+                            <path fill-rule="evenodd" d="m3.855 7.286 1.067-.534a1 1 0 0 0 .542-1.046l-.44-2.858A1 1 0 0 0 4.036 2H3a1 1 0 0 0-1 1v2c0 .709.082 1.4.238 2.062a9.012 9.012 0 0 0 6.7 6.7A9.024 9.024 0 0 0 11 14h2a1 1 0 0 0 1-1v-1.036a1 1 0 0 0-.848-.988l-2.858-.44a1 1 0 0 0-1.046.542l-.534 1.067a7.52 7.52 0 0 1-4.86-4.859Z" clip-rule="evenodd" />
+                        </svg>
+                        <p class="my-12 text-xl">+91 987654321</p>
+                    </div>                   
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 ">
+                <div class="text-3xl text-white p-10 m-0">Experience</div>
+                <form class="mt-0 align-center" >
+                    <div class="p-10">
+                        <label for="name">Email</label>
+                        <input type="email" name="name" class="px-3">
+                    </div>
+                    <div class="p-10 ">
+                        <label for="name">Message</label>
+                        <input type="text" name="name" class="p-3">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+</body>
+</html>
