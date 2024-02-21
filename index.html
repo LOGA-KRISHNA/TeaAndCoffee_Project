@@ -9,21 +9,31 @@
 </head>
 <body class="bg-yellow-700 font-mono" >
     <section class="container-sm ">
-        <div class="mx-auto flex flex-start justify-between m-10  p-4 bg-yellow-800">
+        <div class="mx-auto flex flex-start justify-between mb-0 m-10  p-4 bg-yellow-800">
             <div class="text-2xl font-bold text-white">
                 T&C Truck
             </div>
-            <div >
+            <div>
                 <ul class="hidden sm:flex">
-                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#home">Home</a></li>
-                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#products">products</a></li>
-                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#frances">Frances</a></li>
-                    <li class="px-3 font-normal text-xl border-none bg-yellow-800 "><a class="p-3 hover:text-white hover:bg-yellow-900 rounded" href="#As">About Us</a></li>
+                    <li class="p-3  font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-4 hover:text-white hover:bg-yellow-900 rounded" href="#home">Home</a></li>
+                    <li class="p-3  font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-4 hover:text-white hover:bg-yellow-900 rounded" href="#products">products</a></li>
+                    <li class="p-3  font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-4 hover:text-white hover:bg-yellow-900 rounded" href="#frances">Frances</a></li>
+                    <li class="p-3  font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-4 hover:text-white hover:bg-yellow-900 rounded" href="#As">About Us</a></li>
                 </ul>
-                <a onclick="show()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="44" class="sm:hidden"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path></svg></a>
+                <a ><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="44" class="sm:hidden" id="van"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path></svg></a>
+                <a class="hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-9 h-9" id="close">
+                    <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
+                  </svg></a>  
             </div>
         </div>
-        
+        <div class="hidden h-80 fixed w-full flex flex-row-reverse " id="less">           
+            <ul class="w-1/2 flex flex-col align-center">
+                <li class="p-5 font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-3 hover:text-white hover:bg-yellow-900 rounded" href="#home">Home</a></li>
+                <li class="p-5 font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-3 hover:text-white hover:bg-yellow-900 rounded" href="#products">products</a></li>
+                <li class="p-5 font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-3 hover:text-white hover:bg-yellow-900 rounded" href="#frances">Frances</a></li>
+                <li class="p-5 font-normal text-xl border-none bg-yellow-800 "><a class="nav_link p-3 hover:text-white hover:bg-yellow-900 rounded" href="#As">About Us</a></li>
+            </ul>
+        </div>
         
     </section>
 
@@ -94,7 +104,7 @@
         </div>
     </section>
 
-    <section class="bg-yellow-800 " id="As">
+    <section class="bg-yellow-800" id="As">
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="w-full sm:w-1/2">
                 <div class="text-3xl text-white p-3 mt-2">Contact us</div>
@@ -129,6 +139,25 @@
             </div>
         </div>
     </section>
- 
+    <script>
+        const nav=document.getElementById('van');
+        const lss=document.getElementById('less');
+        const close1=document.getElementById('close');
+        const navlink=document.querySelector('.nav_link');
+        nav.addEventListener("click",()=>{
+            lss.classList.remove('hidden');
+        })
+       
+        nav.addEventListener("click",()=>{
+            close1.classList.remove('hidden');
+        })
+        nav.addEventListener("click",()=>{
+            nav.classList.add('hidden');
+        })
+        navlink.forEach(link=>
+                    link.addEventListener("click",()=>{
+                        lss.classList.add('hidden');
+                    }))
+    </script>
 </body>
 </html>
